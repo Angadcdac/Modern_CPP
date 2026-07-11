@@ -1,0 +1,4 @@
+Hello Angad
+Welcome to C++ File Handling
+Embedded Systems Engineer
+This line is added using append mode.

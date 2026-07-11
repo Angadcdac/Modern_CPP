@@ -1,0 +1,35 @@
+//This is the example of passing object as function arguments
+#include<iostream>
+using namespace std;
+class complex{
+	int a;
+	int b;
+	public:
+	void setData(int V1,int V2){
+	  a = V1;
+	  b = V2;
+	}
+	//this is the example of the function overlaoding
+	void setData(complex o1, complex o2){//add the object value
+		a = o1.a + o2.a;
+		b = o1.b + o2.b;
+	}
+        void printNumber(){
+		cout<<"Your number is == "<<a<<" + "<<b<<"i"<<endl;
+
+	}	
+};
+int main(void)
+{
+	complex c1,c2,c3;
+	c1.setData(1,2);
+	c1.printNumber();
+	
+	c2.setData(3,4);
+	c2.printNumber();
+	
+	c3.setData(c1,c2);//this is the example of function oveloading//called by complex variable
+	c3.printNumber();
+	return 0;
+
+}
